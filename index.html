@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ios Apps Downloader</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --primary: #007aff;
+      --dark: #1c1c1e;
+      --light: #f2f2f7;
+      --accent: #34c759;
+    }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+    body {
+      background: var(--light);
+      color: var(--dark);
+      line-height: 1.6;
+    }
+    header {
+      background: var(--primary);
+      color: white;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+    header p {
+      font-size: 1.1rem;
+    }
+    .cta-buttons {
+      margin-top: 1rem;
+    }
+    .cta-buttons a {
+      display: inline-block;
+      margin: 0.5rem;
+      padding: 0.75rem 1.5rem;
+      background: white;
+      color: var(--primary);
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    section {
+      padding: 2rem 1rem;
+      max-width: 900px;
+      margin: auto;
+    }
+    h2 {
+      margin-bottom: 1rem;
+      font-size: 1.5rem;
+      color: var(--primary);
+    }
+    .features, .plans {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+    }
+    .card {
+      background: white;
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    .card h3 {
+      margin-bottom: 0.5rem;
+      color: var(--dark);
+    }
+    .card p {
+      font-size: 0.95rem;
+    }
+    .card .price {
+      font-size: 1.2rem;
+      color: var(--accent);
+      margin-top: 0.5rem;
+    }
+    footer {
+      background: var(--dark);
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+    }
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.5rem;
+      }
+      .cta-buttons a {
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Ios Apps Downloader</h1>
+    <p>Descarga e instala apps de iPhone desde Cuba sin restricciones</p>
+    <div class="cta-buttons">
+      <a href="#planes">Ver planes</a>
+      <a href="#inicio">Descargar</a>
+    </div>
+  </header>
+
+  <section id="descripcion">
+    <h2>¿Qué es?</h2>
+    <p>Ios Apps Downloader es una herramienta ligera que permite descargar archivos IPA de aplicaciones iOS para instalarlos en iPhone y iPad usando iTunes, 3uTools o iMazing. Diseñada para técnicos en Cuba, donde el acceso a los servicios de Apple está limitado.</p>
+  </section>
+
+  <section id="ventajas">
+    <h2>Ventajas</h2>
+    <div class="features">
+      <div class="card">
+        <h3>✔️ Optimizado para Cuba</h3>
+        <p>Funciona sin conexión directa a la App Store.</p>
+      </div>
+      <div class="card">
+        <h3>⚙️ Compatible</h3>
+        <p>Usa iTunes, 3uTools o iMazing para instalar apps.</p>
+      </div>
+      <div class="card">
+        <h3>💸 Económico</h3>
+        <p>Planes accesibles desde solo $5 USD.</p>
+      </div>
+      <div class="card">
+        <h3>🚀 En evolución</h3>
+        <p>Próximamente: instalación directa y más herramientas.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="planes">
+    <h2>Planes y precios</h2>
+    <div class="plans">
+      <div class="card">
+        <h3>Básico</h3>
+        <p>Acceso por 3 meses</p>
+        <div class="price">$5 USD</div>
+      </div>
+      <div class="card">
+        <h3>Avanzado</h3>
+        <p>Acceso por 6 meses</p>
+        <div class="price">$8 USD</div>
+      </div>
+      <div class="card">
+        <h3>Pro</h3>
+        <p>Acceso por 12 meses</p>
+        <div class="price">$12 USD</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="inicio">
+    <h2>¿Cómo funciona?</h2>
+    <p>Descarga el archivo IPA directamente desde AppStore, instálalo con tu herramienta preferida, y listo. Próximamente podrás instalar directamente sin depender de software externo.</p>
+  </section>
+
+  <footer>
+    &copy; 2025 Ios Apps Downloader. Todos los derechos reservados.
+  </footer>
+
+  <script>
+    document.querySelectorAll('.cta-buttons a').forEach(btn => {
+      btn.addEventListener('click', e => {
+        e.preventDefault();
+        const target = document.querySelector(btn.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>
